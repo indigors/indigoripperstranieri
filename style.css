@@ -1,0 +1,162 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size:16px;
+ }
+
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+	/* so that aspect ratio is kept even if height is declared in markup */
+	border: 0;
+	/* this stops a border if the image is inside a link */
+       }
+
+/* this is a CSS comment code - always comment your work to explain what you're doing */
+body {
+	font-family: 'Peddana', serif;
+     }
+
+/* background color defaults - remember to spell it colour */
+body {
+	background-color: transparent;
+     }
+
+header {
+	background-color: transparent;
+       }
+/* if we want a number of different elements to have the same style we have to use a comma to seperate them */
+header, footer {
+	text-align: center;
+               }
+
+/* TYPEOGRAPHY */
+h1 {
+	font-size:50px;
+	color: black; 
+    text-transform: capitalize;
+	font-family: 'Peddana', serif;
+   }
+h2 {
+	font-size: 30px; 
+	font-family: 'Peddana', serif;
+	text-transform: capitalize;
+   }
+p,li {
+	      font-size: 20px  
+           }
+.menu{
+	font-size: 30px;
+}
+
+.item {
+
+	padding: 1%;
+	margin: 10%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px;
+      }
+
+main {
+/* use max-width wherever possible */
+	max-width: 1000px;
+    margin-left: auto;
+	margin-right: auto;
+     }
+
+/* this section makes the list fit in the box - called nesting */
+.item li {
+	margin-left: 25px;
+         }
+
+nav {
+	text-align: center; 
+	}
+nav li {
+	display: inline-block;
+       }
+/* nav li a, or nav a ?? */ 
+nav a {
+	background: transparent;
+	color: black;
+	padding: 5px;
+	text-decoration: none;
+	border-radius: 5px; 
+      }
+
+nav a:hover {
+	background: antiquewhite; 
+            }
+
+
+body {
+	background-color: antiquewhite;
+	background-image: url("walk035.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+     }
+
+/* responsiveness */
+@media screen and (min-width: 500px) {
+body {
+	background-color: transparent;
+	font-family: 'Peddana', serif;
+  }
+.item {
+	background-color: rgba(246,246,246,0.60); 
+}
+h2{ 
+font-family: 'Peddana', serif;
+}
+
+@media screen and (min-width: 768px) { 
+body { 
+	background-color: antiquewhite;
+	background-image: url("walk035.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+.item {
+
+	background-color: 0.9/* 0.9 means transparent */ 
+	}
+	footer {
+		color: white; 
+		clear: both;
+	}
+}
+
+
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+} 
+
+input[type=submit] {
+	width: 100%;
+	background-color: antiquewhite;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit] hover {
+	background-color: antiquewhite;
+}
+
+div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
